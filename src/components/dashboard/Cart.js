@@ -42,11 +42,11 @@ const Cart = () => {
                   className="flex flex-col border-t border-[#2C333F] py-6 space-y-4"
                 >
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="w-full sm:w-[180px] h-[180px] sm:h-[120px] flex-shrink-0">
+                    <div className="w-full sm:w-[180px] h-[120px] sm:h-[120px] flex-shrink-0 overflow-hidden rounded-lg">
                       <img
                         src={item.courseId?.thumbnail}
                         alt={item.courseId?.courseName}
-                        className="w-full h-fit rounded-lg object-cover"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     <div className="flex-grow space-y-2">
